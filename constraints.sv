@@ -60,4 +60,6 @@ class constraints extends uvm_sequence_item;
                                        LOAD:= w_load };
                            }
 
+  // To do Items. 
+  // Bi-directional constraints, sized constraints, conditional constraints
 endclass 

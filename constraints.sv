@@ -59,6 +59,7 @@ class constraints extends uvm_sequence_item;
                                        WORD:= w_word,
                                        LOAD:= w_load };
                            }
+   constraint     f_c     { f inside fib; }
 
   // To do Items. 
   // Bi-directional constraints, sized constraints, conditional constraints

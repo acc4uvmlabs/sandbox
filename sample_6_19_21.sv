@@ -56,7 +56,7 @@ module sample_6_19_21;
                            s == r ; 
 			   t < 30;
 			   s >= 25; 
-                           }
+                          }
 
   endclass 
   
@@ -67,8 +67,8 @@ module sample_6_19_21;
     repeat (30) begin 
       bus_h.randomize(); 
       bus_h.print(); 
-      // $display( "Addr  %h , io_space_flag %h  to_align %h", bus_h.addr, bus_h.io_space_flag, bus_h.to_align); 
-      // bus_h.io_space_flag = !bus_h.io_space_flag; 
+      $display( "Addr  %h , io_space_flag %h  to_align %h", bus_h.addr, bus_h.io_space_flag, bus_h.to_align); 
+      bus_h.io_space_flag = !bus_h.io_space_flag; 
     end 
   end 
 

@@ -19,3 +19,4 @@ module static_variable;
   end 
 
 endmodule 
+//  vcs -sverilog -timescale=1ns/1ns sample_5_9.sv ; ./simv &

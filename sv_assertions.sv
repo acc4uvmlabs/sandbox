@@ -1,6 +1,12 @@
 // vcs -sverilog +systemverilogext+.sv -assert svaext assert.sv ; ./simv & ;
 // Important points: 
 // Also note that, there can be only one valid start on any give positive edge of the clock, but there can be multiple valid endings.
+// Types of assertions: 
+// 1. Concurrent: Based on clock event
+//            b.  Evaluated at clock edges
+//            c.  Sampling is done in "preponed" region, evaluation is done in "observed" region 
+// 2. Immediate: based on simulation events. 
+//            b. Evaluated immmediately 
 module assertion();
 
   bit assertion_check  = 1;
